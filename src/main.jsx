@@ -11,8 +11,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/service-worker.js").catch(() => {
-      // Service worker registration is optional enhancement.
-    });
+    const serviceWorkerUrl = `${import.meta.env.BASE_URL}service-worker.js`;
+    navigator.serviceWorker
+      .register(serviceWorkerUrl)
+      .catch(() => {
+        // Service worker registration is optional enhancement.
+      });
   });
 }

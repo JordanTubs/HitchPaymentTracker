@@ -1,11 +1,12 @@
 const CACHE_NAME = "admin-ledger-v1";
+const BASE_PATH = self.location.pathname.replace(/service-worker\.js$/, "");
 const APP_SHELL = [
-  "/",
-  "/index.html",
-  "/manifest.webmanifest",
-  "/icon-192.svg",
-  "/icon-512.svg",
-  "/apple-touch-icon.svg",
+  BASE_PATH,
+  `${BASE_PATH}index.html`,
+  `${BASE_PATH}manifest.webmanifest`,
+  `${BASE_PATH}icon-192.svg`,
+  `${BASE_PATH}icon-512.svg`,
+  `${BASE_PATH}apple-touch-icon.svg`,
 ];
 
 self.addEventListener("install", (event) => {
@@ -41,7 +42,7 @@ self.addEventListener("fetch", (event) => {
 
   if (event.request.mode === "navigate") {
     event.respondWith(
-      fetch(event.request).catch(() => caches.match("/index.html")),
+      fetch(event.request).catch(() => caches.match(`${BASE_PATH}index.html`)),
     );
     return;
   }
