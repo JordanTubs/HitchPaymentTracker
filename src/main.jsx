@@ -13,7 +13,7 @@ if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     const serviceWorkerUrl = `${import.meta.env.BASE_URL}service-worker.js`;
     navigator.serviceWorker
-      .register(serviceWorkerUrl)
+      .register(serviceWorkerUrl, { scope: import.meta.env.BASE_URL })
       .catch(() => {
         // Service worker registration is optional enhancement.
       });
