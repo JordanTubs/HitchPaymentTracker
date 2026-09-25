@@ -88,6 +88,32 @@ button {
   transform: translateY(-1px) scale(0.96);
 }
 
+.pasabai-panel {
+  border: 1px solid rgba(8, 43, 97, 0.09);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(8, 43, 97, 0.035);
+}
+
+.pasabai-empty-state {
+  padding: 34px 20px;
+  border: 1px dashed rgba(8, 43, 97, 0.18);
+  border-radius: 14px;
+  background: rgba(244, 246, 249, 0.72);
+  color: #082b61;
+  text-align: center;
+}
+
+.pasabai-sheet-backdrop {
+  animation: pasabai-sheet-backdrop-in 180ms ease both;
+}
+
+.pasabai-sheet {
+  max-width: 480px;
+  margin: 0 auto;
+  animation: pasabai-sheet-in 260ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
 div[class*="overflow-y-auto"] {
   animation: pasabai-screen-in 240ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
@@ -102,6 +128,16 @@ button:not(:disabled):active {
 
 @keyframes pasabai-screen-in {
   from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pasabai-sheet-backdrop-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pasabai-sheet-in {
+  from { opacity: 0; transform: translateY(28px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
