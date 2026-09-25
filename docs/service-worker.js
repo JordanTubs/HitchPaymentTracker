@@ -1,4 +1,4 @@
-const CACHE_NAME = "pasabai-v3";
+const CACHE_NAME = "pasabai-v4";
 const BASE_PATH = self.location.pathname.replace(/service-worker\.js$/, "");
 const APP_SHELL = [
   BASE_PATH,
