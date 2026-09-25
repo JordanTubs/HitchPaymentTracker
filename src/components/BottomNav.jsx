@@ -24,7 +24,7 @@ export function BottomNav({ activeKey, onChange }) {
               aria-current={active ? "page" : undefined}
               className={`pasabai-dock-item ${active ? "is-active" : ""}`}
             >
-              <Icon aria-hidden="true" size={20} strokeWidth={active ? 2.4 : 2} />
+              <Icon aria-hidden="true" size={25} strokeWidth={active ? 2.5 : 2.15} />
               <span>{item.label}</span>
             </button>
           );
