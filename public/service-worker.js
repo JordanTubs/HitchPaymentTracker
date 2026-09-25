@@ -4,9 +4,9 @@ const APP_SHELL = [
   BASE_PATH,
   `${BASE_PATH}index.html`,
   `${BASE_PATH}manifest.webmanifest`,
-  `${BASE_PATH}icon-192.svg`,
-  `${BASE_PATH}icon-512.svg`,
-  `${BASE_PATH}apple-touch-icon.svg`,
+  `${BASE_PATH}pasabai-icon-192.png`,
+  `${BASE_PATH}pasabai-icon-512.png`,
+  `${BASE_PATH}pasabai-apple-touch-icon.png`,
 ];
 
 self.addEventListener("install", (event) => {
