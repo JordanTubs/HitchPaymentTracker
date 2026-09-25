@@ -1,4 +1,4 @@
-const CACHE_NAME = "admin-ledger-v2";
+const CACHE_NAME = "pasabai-v3";
 const BASE_PATH = self.location.pathname.replace(/service-worker\.js$/, "");
 const APP_SHELL = [
   BASE_PATH,

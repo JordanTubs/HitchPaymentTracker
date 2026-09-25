@@ -4,15 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#2274A5",
-        card: "#E7DFC6",
-        appbg: "#E9F1F7",
-        ink: "#131B23",
-        muted: "#816C61",
-        success: "#2D8A56",
+        primary: "#082B61",
+        accent: "#E5292A",
+        card: "#F4F6F9",
+        appbg: "#EDF1F7",
+        ink: "#10233F",
+        muted: "#667085",
+        success: "#16794A",
+        danger: "#C92424",
       },
       boxShadow: {
-        ledger: "0 18px 45px rgba(19, 27, 35, 0.08)",
+        ledger: "0 16px 40px rgba(8, 43, 97, 0.12)",
       },
       borderRadius: {
         "4xl": "2rem",
